@@ -3,15 +3,15 @@ import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Calculator {
+public class Main {
 
-    private static final Logger logger = LogManager.getLogger(Calculator.class);
-    public Calculator() {
+    private static final Logger logger = LogManager.getLogger(Main.class);
+    public Main() {
     }
 
     public static void main(String[] args) {
 
-        Calculator calculator = new Calculator();
+        Main calculator = new Main();
         Scanner scanner = new Scanner(System.in);
         double number1, number2;
         do {
