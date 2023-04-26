@@ -2,6 +2,12 @@
 - name: Copy jar file to inventory i.e. Pull docker image
   hosts: all
   tasks:
+          - name: Install requests library
+            pip3:
+                  name: requests
+                  state: present
+                  
+                  
           - name: Pull junit devops image 
             docker_image:
                   name: amishraj/calculator 
