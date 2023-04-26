@@ -3,7 +3,7 @@
   hosts: all
   tasks:
           - name: Install requests library
-            pip3:
+            pip:
                   name: requests
                   state: present
                   
